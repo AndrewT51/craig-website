@@ -1,0 +1,87 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/****************************************************
+** This is the css for the custom-header directive **
+****************************************************/
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  width: 100%;
+  background-color: white;
+  z-index:1000;
+  
+}
+.logo {
+  width: 100%;
+  min-height: 218px;
+  max-height: 218px;
+  position: relative;
+}
+
+
+.navigation-bar {
+  position:absolute;
+  top: -245px;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  transition: .7s;
+  z-index:1;
+  width:100%;
+}
+
+/* For testing the transition */
+.logo-container:hover + nav .navigation-bar {
+  top:222px;
+}
+/* Test ends */
+
+.navigation-bar > li {
+  background-color: rgba(250,250,250,.65);
+  text-align: center;
+  flex: 1;
+  list-style: none;
+  padding:15px;
+  border-top: 1px solid black;
+}
+
+.navigation-bar  li:last-child {
+  border-bottom: 1px solid black;
+}
+
+.main-pic-container {
+  background-image: url('../pics/workshop.jpg');
+  background-size: cover;
+  background-position: center; 
+  /*position: relative;*/
+  /*top: 0px;*/
+  height:450px;
+  width:100%;
+}
+
+
+.ui-view{
+  flex:1;
+}
+
+footer {
+  height:50px;
+  width: 100vw;
+  background-color: grey;
+}
+
+
+
+

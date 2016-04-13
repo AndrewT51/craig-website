@@ -1,0 +1,43 @@
+@media only screen and (min-width: 500px){
+ header {
+  border-bottom: 2px black solid;
+  height: 100px;
+ }
+
+ header, 
+ .navigation-bar {
+  flex-direction: row;
+  justify-content:space-between;
+ }
+ .logo-container, 
+ .logo{
+  width: 150px;
+  min-height:100px;
+  flex:1;
+ }
+
+ header > nav {
+  flex:3;
+  height:100px;
+  border-bottom: 1px solid black;
+ }
+
+ .navigation-bar,
+ .logo-container:hover + nav .navigation-bar {
+  position: relative;
+  top:0;
+  min-height:100px;
+ }
+
+ .navigation-bar > li, 
+ .navigation-bar > li:last-child{
+  border: 0;
+  
+
+ }
+ .main-pic-container {
+  position: relative;
+  }
+ }
+
+}
