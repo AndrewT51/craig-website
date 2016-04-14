@@ -58,24 +58,22 @@ header > nav {
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
-
+.about-wrapper {
+  display:flex;
+}
 .service{
   text-align: center;
   background-color: beige;
   height: 100px;
   width: 95%;
 }
-.about-wrapper {
-  display:flex;
-  flex-direction:row;
-  
-}
 .about-picture {
   flex:1;
+  min-height: 521px;
   height:  calc(100vh - 161px);
 }
 .blurb {
-  flex:2;
+  flex:3;
 }
 
 

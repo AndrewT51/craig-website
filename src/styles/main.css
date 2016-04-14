@@ -99,6 +99,7 @@ header {
 
 .about-picture {
   /*flex:1;*/
+  /*display:table;*/
   height:  800px;
   background-image: url('../pics/caracature.jpg');
   background-size: cover;
