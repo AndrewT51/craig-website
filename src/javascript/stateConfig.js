@@ -26,4 +26,9 @@ app.config(["$urlRouterProvider", "$stateProvider",($urlRouterProvider, $statePr
     templateUrl: "./src/templates/projects.html",
     controller: "mainCtrl"
   })
+  .state('what-i-do',{
+    url: "/what-i-do",
+    templateUrl: "./src/templates/what-i-do.html",
+    controller: "mainCtrl"
+  })
 }]);
