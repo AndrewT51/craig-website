@@ -20,4 +20,10 @@ app.config(["$urlRouterProvider", "$stateProvider",($urlRouterProvider, $statePr
     templateUrl: "./src/templates/about.html",
     controller: "mainCtrl"
   })
+
+  .state('projects',{
+    url: "/projects",
+    templateUrl: "./src/templates/projects.html",
+    controller: "mainCtrl"
+  })
 }]);

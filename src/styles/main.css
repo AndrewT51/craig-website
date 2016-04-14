@@ -1,14 +1,13 @@
-.example{
-  margin:10px;
-}
 
-.pic-caracature img{
+
+/*.pic-caracature img{
   float: left;
   width: 35%;
-}
+}*/
 
 html,
 body{
+  font-size: x-large;
   height:100%;
   
 }
@@ -83,23 +82,31 @@ header {
 
 .ui-view{
   flex:1;
-  display:flex;
-  flex-direction:column;
+/*  display:flex;
+  flex-direction:column;*/
 }
 
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
-
-/*.about-container {
-  flex:1;
-  background-image: url('../pics/caracature.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
+.caracature {
+  width: 100%;
 }
 
-.about-container:before {
+/*.text-container {
+  margin:20px;
+  padding-bottom: 30px;
+}*/
+
+
+/*.about-container {
+  background-image: url('../pics/caracature.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}*/
+
+/*.about-container:before {
    content: ' ';
     display: block;
     position: absolute;
@@ -109,14 +116,16 @@ header {
     height: 100%;
     z-index: 100;
     opacity: 0.6;
-    }*/
+}*/
 
-    .about-container {
+   /* .about-container {
       flex:1;
       width:100%;
       position: relative;
+      z-index: -3;
+      padding: 10px;
     }
-    /* You could use :after - it doesn't really matter */
+     You could use :after - it doesn't really matter 
     .about-container:before {
       content: ' ';
       display: block;
@@ -125,7 +134,7 @@ header {
       top: 0;
       width: 100%;
       height: 100%;
-      z-index: 1;
+      z-index: -2;
       background-image: url('../pics/caracature.jpg');
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -139,9 +148,9 @@ header {
      top: 0;
      width: 100%;
      height: 100%;
-     z-index: 2;
+     z-index: -1;
      background-image: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 200%,rgba(255,255,255,0) 300% );
-   }
+   }*/
 
 
 /****************************************************
@@ -154,10 +163,12 @@ small {
 
 footer {
   padding-top:20px;
+  padding-bottom:20px;
   height:50px;
   width: 100vw;
   background-color: grey;
 }
+
 
 
 

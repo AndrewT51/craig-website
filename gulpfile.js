@@ -24,7 +24,7 @@ gulp.task('pics',()=>{
 })
 
 gulp.task('css', function () {
-  return gulp.src(['src/styles/main.css','src/styles/desktop.css'])
+  return gulp.src(['src/styles/main.css','src/styles/grid-system.css','src/styles/desktop.css'])
     .pipe(concatCss('bundle.css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],

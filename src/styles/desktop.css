@@ -1,4 +1,8 @@
 @media only screen and (min-width: 600px){
+  html,
+  body{
+    font-size: large;
+  }
  header {
   border-bottom: 2px black solid;
   height: 100px;
@@ -49,11 +53,17 @@ header > nav {
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
+/*.caracature {
+  margin: 40px;
+  min-width:400px;
+  width:30%;
+  float:left;
+}*/
 
-.about-container:before {
+/*.about-container:before {
   display:none;
 }
 .about-container:after {
   display:none;
-}
+}*/
 }
