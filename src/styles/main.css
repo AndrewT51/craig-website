@@ -5,8 +5,7 @@
   width: 35%;
 }*/
 
-html,
-body{
+html{
   font-size: x-large;
   height:100%;
   
@@ -14,7 +13,7 @@ body{
 
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -82,22 +81,34 @@ header {
 
 .ui-view{
   flex:1;
-/*  display:flex;
-  flex-direction:column;*/
 }
 
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
-.caracature {
+/*.caracature {
   width: 100%;
-}
+}*/
 
 /*.text-container {
   margin:20px;
   padding-bottom: 30px;
 }*/
 
+
+.about-picture {
+  /*flex:1;*/
+  /*display:table;*/
+  height:  800px;
+  background-image: url('../pics/caracature.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.blurb {
+  /*flex:2;*/
+  margin: 30px;
+}
 
 /*.about-container {
   background-image: url('../pics/caracature.jpg');

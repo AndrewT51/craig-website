@@ -29,6 +29,7 @@ header > nav {
   border-bottom: 1px solid black;
 }
 
+
 .navigation-bar,
 .logo-container:hover + nav .navigation-bar,
 .logo-container + nav .navigation-bar.menu-visible {
@@ -50,20 +51,33 @@ header > nav {
 }
 
 
+.ui-view{
+  flex-direction:row;
+}
+
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
-/*.caracature {
-  margin: 40px;
-  min-width:400px;
-  width:30%;
-  float:left;
-}*/
+.about-wrapper {
+  display:flex;
+}
+.service{
+  text-align: center;
+  background-color: beige;
+  height: 100px;
+  width: 95%;
+}
+.about-picture {
+  flex:1;
+  min-height: 521px;
+  height:  calc(100vh - 161px);
+}
+.blurb {
+  flex:3;
+}
 
-/*.about-container:before {
-  display:none;
+
 }
-.about-container:after {
-  display:none;
-}*/
-}
+
+
+
