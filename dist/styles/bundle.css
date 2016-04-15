@@ -3,14 +3,13 @@
   width: 35%;
 }*/
 
-html,
-body {
+html {
   font-size: x-large;
   height: 100%;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +110,11 @@ header {
 .about-picture {
   /*flex:1;*/
   /*display:table;*/
-  height: 800px;
+  height: 720px;
   background-image: url("../pics/caracature.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: 50% 50%;
 }
 
 .blurb {
