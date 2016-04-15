@@ -6,7 +6,7 @@
 }*/
 
 html{
-  font-size: x-large;
+  font-size: large;
   height:100%;
   
 }
@@ -99,7 +99,7 @@ header {
 .about-picture {
   /*flex:1;*/
   /*display:table;*/
-  height:  800px;
+  height:  720px;
   background-image: url('../pics/caracature.jpg');
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 600px){
   html,
   body{
-    font-size: large;
+    font-size: medium;
   }
  header {
   border-bottom: 2px black solid;
@@ -62,10 +62,11 @@ header > nav {
   display:flex;
 }
 .service{
+  margin: 0;
   text-align: center;
   background-color: beige;
   height: 100px;
-  width: 95%;
+  /*width: 95%;*/
 }
 .about-picture {
   flex:1;
