@@ -1,5 +1,5 @@
 app.directive('customHeader',function(){
   return {
-    templateUrl: "dist/directives/header.html"
+    templateUrl: "src/templates/directives/header.html"
   }
 })
