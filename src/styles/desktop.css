@@ -29,7 +29,6 @@ header > nav {
   border-bottom: 1px solid black;
 }
 
-
 .navigation-bar,
 .logo-container:hover + nav .navigation-bar,
 .logo-container + nav .navigation-bar.menu-visible {
@@ -50,14 +49,15 @@ header > nav {
   position: relative;
 }
 
-
 .ui-view{
   flex-direction:row;
 }
 
+
 /****************************************************
 **      This is the styling for the about page     **
 ****************************************************/
+
 .about-wrapper {
   display:flex;
 }
@@ -66,8 +66,8 @@ header > nav {
   text-align: center;
   background-color: beige;
   height: 100px;
-  /*width: 95%;*/
 }
+
 .about-picture {
   flex:1;
   min-height: 521px;
@@ -78,7 +78,47 @@ header > nav {
 }
 
 
+/****************************************************
+**    This is the styling for the what-i-do page   **
+****************************************************/
+
+.wrapper {
+  margin: 50px;
+  height: calc(100vh - 295px);
+  min-height: 300px;
 }
+.section {
+  height: 100%;
+}
+.col {
+  height:50%;
+}
+.service {
+  position: relative;
+  height: 85%;
+}
+.service img {
+  position: absolute;
+  /*text-align: center;*/
+  top:0;
+  left:0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.service h1 {
+  position:absolute;
+  bottom: 0;
+  right:0;
+  margin: 0;
+  z-index:2;
+}
+
+}
+
+}
+
+
 
 
 

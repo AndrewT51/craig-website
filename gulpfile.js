@@ -5,9 +5,11 @@ var uglify = require('gulp-uglify');
 var image = require('gulp-image');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
+var ngAnnotate = require('gulp-ng-annotate');
 
 gulp.task('default',['pics','css'],() => {
   return gulp.src(['src/javascript/app.js','src/javascript/stateConfig.js','src/javascript/*.js','src/javascript/controllers/*.js'])
+    .pipe(ngAnnotate())
     .pipe(concat('app.js'))
     .pipe(babel({
       presets: ['es2015']
