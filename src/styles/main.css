@@ -139,16 +139,37 @@ header >nav li {
 **        This is the styling for the footer       **
 ****************************************************/
 
-small {
-  margin: 20px;
-}
 
 footer {
   /*padding-top:20px;*/
   /*padding-bottom:20px;*/
-  height:50px;
+  height:100px;
   width: 100vw;
   background-color: grey;
+}
+
+small {
+  display: inline-block;
+  margin: 45px 0 0 10px;
+}
+
+footer svg {
+  max-width: 30px;
+  float:right;
+  margin-right: 8%;
+  margin-top: 40px;
+}
+
+.facebook-icon:hover {
+  fill: #3C5998;
+}
+
+.linkdin-icon:hover {
+  fill: #1985BD;
+}
+
+.email-icon:hover {
+  fill: #0a88ff
 }
 
 

@@ -128,7 +128,16 @@ header > nav {
 }
 
 
-
+footer {
+  height: 50px;
+}
+small {
+  margin-top: 15px;
+}
+footer svg {
+  width: 20px;
+  margin-top: 15px;
+}
 
 }
 
