@@ -1,0 +1,498 @@
+html {
+  font-size: large;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/****************************************************
+** This is the css for the custom-header directive **
+****************************************************/
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+header >nav li {
+  cursor: pointer;
+}
+
+.logo-container {
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  width: 100%;
+  min-height: 218px;
+  max-height: 218px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: -245px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition: .7s;
+  z-index: 3;
+  width: 100%;
+}
+
+.logo-container + nav .navigation-bar.menu-visible {
+  top: 222px;
+}
+
+.navigation-bar > li {
+  background-color: rgba(250,250,250,.65);
+  text-align: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  list-style: none;
+  padding: 15px;
+  border-top: 1px solid black;
+}
+
+.navigation-bar  li:last-child {
+  border-bottom: 1px solid black;
+}
+
+.main-pic-container {
+  background-image: url("../pics/workshop.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  height: 450px;
+  width: 100%;
+}
+
+.ui-view {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/****************************************************
+**      This is the styling for the about page     **
+****************************************************/
+
+.about-picture {
+  height: 720px;
+  background-image: url("../pics/caracature.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.about-picture:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.blurb {
+  margin: 30px;
+}
+
+/****************************************************
+**    This is the styling for the what-i-do page   **
+****************************************************/
+
+/*.service {
+  border-top: 1px solid black;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color: #DDDCDC;
+  height: 50px;
+  text-align: right;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  position:relative;
+}*/
+
+.service {
+  border-top: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /*background-image: linear-gradient(to top right, #DDDCDC, white 120%);*/
+  background-image: linear-gradient(to top right, rgba(255,255,255,0.1) ,rgba(255,255,255,0.9) 100%);
+  background-color: #DDDCDC;
+  margin: 0 3px;
+  height: 85px;
+  position: relative;
+  text-align: right;
+}
+
+.service img {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.service h1 {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+/****************************************************
+**        This is the styling for the footer       **
+****************************************************/
+
+footer {
+  /*padding-top:20px;*/
+  /*padding-bottom:20px;*/
+  height: 100px;
+  width: 100vw;
+  background-color: grey;
+}
+
+small {
+  display: inline-block;
+  margin: 45px 0 0 10px;
+}
+
+footer svg {
+  max-width: 30px;
+  float: right;
+  margin-right: 8%;
+  margin-top: 40px;
+}
+
+.facebook-icon:hover {
+  fill: #3C5998;
+}
+
+.linkdin-icon:hover {
+  fill: #1985BD;
+}
+
+.email-icon:hover {
+  fill: #0a88ff;
+}
+/*  SECTIONS  */
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */
+}
+
+/*  GRID OF TWELVE  */
+
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 91.53%;
+}
+
+.span_10_of_12 {
+  width: 83.06%;
+}
+
+.span_9_of_12 {
+  width: 74.6%;
+}
+
+.span_8_of_12 {
+  width: 66.13%;
+}
+
+.span_7_of_12 {
+  width: 57.66%;
+}
+
+.span_6_of_12 {
+  width: 49.2%;
+}
+
+.span_5_of_12 {
+  width: 40.73%;
+}
+
+.span_4_of_12 {
+  width: 32.26%;
+}
+
+.span_3_of_12 {
+  width: 23.8%;
+}
+
+.span_2_of_12 {
+  width: 15.33%;
+}
+
+.span_1_of_12 {
+  width: 6.866%;
+}
+
+.span_4_of_12:nth-child(3n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+
+  .span_1_of_12,
+  .span_2_of_12,
+  .span_3_of_12,
+  .span_4_of_12,
+  .span_5_of_12,
+  .span_6_of_12,
+  .span_7_of_12,
+  .span_8_of_12,
+  .span_9_of_12,
+  .span_10_of_12,
+  .span_11_of_12,
+  .span_12_of_12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  html,
+  body {
+    font-size: medium;
+  }
+
+  header {
+    border-bottom: 2px black solid;
+    height: 100px;
+  }
+
+  header,
+  .navigation-bar {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    transition: 0s;
+  }
+
+  .logo-container,
+  .logo {
+    cursor: default;
+    width: 150px;
+    min-height: 100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  header > nav {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    height: 100px;
+    border-bottom: 1px solid black;
+  }
+
+  .navigation-bar,
+  .logo-container:hover + nav .navigation-bar,
+  .logo-container + nav .navigation-bar.menu-visible {
+    position: relative;
+    top: 0;
+    min-height: 100px;
+  }
+
+  .navigation-bar > li,
+  .navigation-bar > li:last-child {
+    border: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .main-pic-container {
+    position: relative;
+  }
+
+  .ui-view {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  /****************************************************
+**      This is the styling for the about page     **
+****************************************************/
+
+  .about-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .service {
+    margin: 0;
+    text-align: center;
+    /*background-color: beige;*/
+    position: relative;
+    height: 85%;
+  }
+
+  .about-picture {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 500px;
+    height: calc(100vh - 152px);
+    /* Replace -192 with -151 when served online.*/
+  }
+
+  .blurb {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  /****************************************************
+**    This is the styling for the what-i-do page   **
+****************************************************/
+
+  .wrapper {
+    margin: 50px;
+    height: calc(100vh - 295px);
+    min-height: 300px;
+  }
+
+  .section {
+    height: 100%;
+  }
+
+  .col {
+    height: 50%;
+  }
+
+  .service {
+    /*border-top: 0;*/
+    /*padding-top:0px;*/
+    /*padding-bottom:0px;*/
+    border-radius: 5px;
+    /* background-image: linear-gradient(to top right, rgba(255,255,255,0.1) ,rgba(255,255,255,0.9) 100%);
+  background-color: #DDDCDC;*/
+    margin: 0;
+    height: 85%;
+    transition: background-color 1s;
+  }
+
+  .service img {
+    left: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /*filter: blur(5px);*/
+    transition: -webkit-filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+  }
+
+  .service:hover {
+    /*background-image: linear-gradient(to top right, #f4e23d, white 120%);*/
+    background-color: #f9e495;
+  }
+
+  .service:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    /*filter: grayscale(0%);*/
+  }
+
+  .service h1 {
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    margin: 0;
+    /*margin-right: 7px;*/
+    z-index: 2;
+    text-shadow: -1px -1px 2px #fff;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  small {
+    margin-top: 15px;
+  }
+
+  footer svg {
+    width: 20px;
+    margin-top: 15px;
+  }
+}
