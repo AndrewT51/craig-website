@@ -95,22 +95,26 @@ header > nav {
   height:50%;
 }
 .service {
-  border-top: 0;
-  padding-top:0px;
-  padding-bottom:0px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-image: linear-gradient(to top right, #DDDCDC, white 120%);
+  /*border-top: 0;*/
+  /*padding-top:0px;*/
+  /*padding-bottom:0px;*/
+  border-radius: 5px;
+ /* background-image: linear-gradient(to top right, rgba(255,255,255,0.1) ,rgba(255,255,255,0.9) 100%);
+  background-color: #DDDCDC;*/
   margin:0;
   height: 85%;
+  transition: background-color 1s;
 }
 .service img {
   left:0;
   filter: grayscale(100%) ;
   /*filter: blur(5px);*/
   transition: filter 1s;
+}
+
+.service:hover {
+  /*background-image: linear-gradient(to top right, #f4e23d, white 120%);*/
+  background-color: #f9e495;
 }
 .service:hover img {
   filter: grayscale(0%);
@@ -120,9 +124,9 @@ header > nav {
 .service h1 {
   position:absolute;
   bottom: 0;
-  right:0;
+  right:7px;
   margin: 0;
-  margin-right: 7px;
+  /*margin-right: 7px;*/
   z-index:2;
   text-shadow: -1px -1px 2px #fff;
 }

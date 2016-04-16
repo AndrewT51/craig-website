@@ -106,7 +106,12 @@ header >nav li {
   margin: 30px;
 }
 
-.service {
+
+/****************************************************
+**    This is the styling for the what-i-do page   **
+****************************************************/
+
+/*.service {
   border-top: 1px solid black;
   padding-top:20px;
   padding-bottom:20px;
@@ -116,6 +121,23 @@ header >nav li {
   margin-top: -4px;
   margin-bottom: -4px;
   position:relative;
+}*/
+
+.service {
+  border-top: 0;
+  padding-top:0px;
+  padding-bottom:0px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /*background-image: linear-gradient(to top right, #DDDCDC, white 120%);*/
+  background-image: linear-gradient(to top right, rgba(255,255,255,0.1) ,rgba(255,255,255,0.9) 100%);
+  background-color: #DDDCDC;
+  margin:0 3px;
+  height: 85px;
+  position:relative;
+  text-align: right;
 }
 
 .service img {
@@ -131,8 +153,11 @@ header >nav li {
 
 
 .service h1 {
-  margin: 0 20px;
+  position:absolute;
+  bottom: 0;
+  right: 20px;
 }
+
 
 
 /****************************************************
