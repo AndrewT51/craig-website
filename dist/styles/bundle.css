@@ -120,6 +120,31 @@ header >nav li {
   margin: 30px;
 }
 
+.service {
+  border-top: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #DDDCDC;
+  height: 50px;
+  text-align: right;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  position: relative;
+}
+
+.service img {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.service h1 {
+  margin: 0 20px;
+}
+
 /****************************************************
 **        This is the styling for the footer       **
 ****************************************************/
@@ -129,8 +154,8 @@ small {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-top:20px;*/
+  /*padding-bottom:20px;*/
   height: 50px;
   width: 100vw;
   background-color: grey;
@@ -249,7 +274,7 @@ footer {
     width: 100%;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   html,
   body {
     font-size: medium;
@@ -334,16 +359,18 @@ footer {
   .service {
     margin: 0;
     text-align: center;
-    background-color: beige;
-    height: 100px;
+    /*background-color: beige;*/
+    position: relative;
+    height: 85%;
   }
 
   .about-picture {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    min-height: 521px;
-    height: calc(100vh - 151px);
+    min-height: 500px;
+    height: calc(100vh - 152px);
+    /* Replace -192 with -151 when served online.*/
   }
 
   .blurb {
@@ -371,17 +398,32 @@ footer {
   }
 
   .service {
-    position: relative;
+    border-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: linear-gradient(to top right, #DDDCDC, white 120%);
+    margin: 0;
     height: 85%;
   }
 
   .service img {
-    position: absolute;
-    /*text-align: center;*/
-    top: 0;
     left: 0;
-    max-height: 100%;
-    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /*filter: blur(5px);*/
+    transition: -webkit-filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+  }
+
+  .service:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    /*filter: grayscale(0%);*/
   }
 
   .service h1 {
@@ -389,6 +431,8 @@ footer {
     bottom: 0;
     right: 0;
     margin: 0;
+    margin-right: 7px;
     z-index: 2;
+    text-shadow: -1px -1px 2px #fff;
   }
 }

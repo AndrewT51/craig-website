@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 500px){
   html,
   body{
     font-size: medium;
@@ -64,14 +64,15 @@ header > nav {
 .service{
   margin: 0;
   text-align: center;
-  background-color: beige;
-  height: 100px;
+  /*background-color: beige;*/
+  position: relative;
+  height: 85%;
 }
 
 .about-picture {
   flex:1;
-  min-height: 521px;
-  height:  calc(100vh - 151px);
+  min-height: 500px;
+  height:  calc(100vh - 152px); /* Replace -192 with -151 when served online.*/
 }
 .blurb {
   flex:3;
@@ -94,16 +95,26 @@ header > nav {
   height:50%;
 }
 .service {
-  position: relative;
+  border-top: 0;
+  padding-top:0px;
+  padding-bottom:0px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(to top right, #DDDCDC, white 120%);
+  margin:0;
   height: 85%;
 }
 .service img {
-  position: absolute;
-  /*text-align: center;*/
-  top:0;
   left:0;
-  max-height: 100%;
-  max-width: 100%;
+  filter: grayscale(100%) ;
+  /*filter: blur(5px);*/
+  transition: filter 1s;
+}
+.service:hover img {
+  filter: grayscale(0%);
+  /*filter: grayscale(0%);*/
 }
 
 .service h1 {
@@ -111,10 +122,13 @@ header > nav {
   bottom: 0;
   right:0;
   margin: 0;
+  margin-right: 7px;
   z-index:2;
+  text-shadow: -1px -1px 2px #fff;
 }
 
-}
+
+
 
 }
 

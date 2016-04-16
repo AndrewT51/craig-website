@@ -10,11 +10,11 @@ var data = [
     },
      {
       title: "Pets",
-      img: "dist/pics/rockinghorse320x272.png"
+      img: "dist/pics/pets-min.png"
     },
      {
       title: "Children",
-      img: "dist/pics/rockinghorse320x272.png"
+      img: "dist/pics/children-min.png"
     },
     {
       title: "Bespoke",
