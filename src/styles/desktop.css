@@ -132,6 +132,17 @@ header > nav {
 }
 
 
+
+/* Landing page style */
+
+.testimonial {
+  text-shadow: 2px 2px 6px black;
+  font-family: cursive;
+  font-size: 1.6em;
+
+}
+
+
 footer {
   height: 50px;
 }

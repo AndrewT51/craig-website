@@ -198,6 +198,41 @@ footer svg {
 }
 
 
+/* Landing Page styling */
+.main-pic-container {
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 100vw;
+}
+.testimonial {
+  text-shadow: 1px 1px 3px black;
+  font-family: cursive;
+  font-size: 1.3em;
+  /*margin-top: 50px;*/
+  text-align: center;
+  color: #fcf4c7;
+}
+.testimonial:before, .testimonial:after {
+  color: #fcf4c7;
+  content: open-quote;
+  font-size: 2.5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+.testimonial:after {
+  content: close-quote;
+
+}
+.author {
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  color:#E2C847;
+  text-shadow: 2px 2px 2px black;
+}
 
 
 
