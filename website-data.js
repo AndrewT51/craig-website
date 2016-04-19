@@ -22,7 +22,7 @@ var data = [
     },
     {
       title: "Murals",
-      img: "dist/pics/rockinghorse320x272.png"
+      img: "dist/pics/mural-min.png"
     }
   
 ]
