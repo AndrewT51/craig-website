@@ -111,18 +111,6 @@ header >nav li {
 **    This is the styling for the what-i-do page   **
 ****************************************************/
 
-/*.service {
-  border-top: 1px solid black;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color: #DDDCDC;
-  height: 50px;
-  text-align: right;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  position:relative;
-}*/
-
 .service {
   border-top: 0;
   padding-top:0px;
@@ -131,7 +119,6 @@ header >nav li {
   border-bottom-left-radius: 30px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /*background-image: linear-gradient(to top right, #DDDCDC, white 120%);*/
   background-image: linear-gradient(to top right, rgba(255,255,255,0.1) ,rgba(255,255,255,0.9) 100%);
   background-color: #DDDCDC;
   margin:0 3px;
@@ -166,8 +153,6 @@ header >nav li {
 
 
 footer {
-  /*padding-top:20px;*/
-  /*padding-bottom:20px;*/
   height:100px;
   width: 100vw;
   background-color: grey;
@@ -211,7 +196,6 @@ footer svg {
   text-shadow: 1px 1px 3px black;
   font-family: 'Merienda One', cursive;
   font-size: 1.1em;
-  /*margin-top: 50px;*/
   text-align: center;
   color: #fcf4c7;
 }
@@ -237,25 +221,15 @@ footer svg {
 
 .testimonial, .author {
   opacity:0;
-  animation: fader 10s infinite;
-
+  filter: blur(5px);
+  transition:2.5s;
 }
 
-@keyframes fader{
-  0% {
-    opacity:0;
-  }
-  30% {
-    opacity:1;
-  }
-  60% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-
+.opaque {
+  filter:blur(0);
+  opacity: 1;
 }
+
 
 
 

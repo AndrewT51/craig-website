@@ -28,15 +28,29 @@ app.controller("mainCtrl", function($state, $scope){
   var quoteNumber = 0;
   var testimonial = document.querySelector('.testimonial');
   var author = document.querySelector('.author');
-  // var author = document.createElement('cite');
-  // var display = document.querySelector('.main-pic-container');
   testimonialBox();
+  
   function testimonialBox(){
+    fadeIn();
+    setTimeout(fadeOut,7500);
     testimonial.textContent = testimonials[quoteNumber].quote;
-    author.textContent = testimonials[quoteNumber].customer
-    // display.appendChild(testimonial,author);
+    author.textContent = testimonials[quoteNumber].customer;
     quoteNumber === 4 ? quoteNumber = 0 : quoteNumber ++;
-    
   }
+  function fadeIn(){
+    if(testimonial.classList){
+      testimonial.classList.add('opaque');
+      author.classList.add('opaque');
+    }else{
+      testimonial.className += ' opaque';
+      author.className += ' opaque';
+    }
+  }
+   function fadeOut(){
+    testimonial.className = testimonial.className.replace(' opaque','')
+    author.className = author.className.replace(' opaque','')
+  }
+
   setInterval(testimonialBox,10000);
+
 })
