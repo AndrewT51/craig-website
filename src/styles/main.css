@@ -205,9 +205,11 @@ footer svg {
   overflow: hidden;
   width: 100vw;
 }
+
+
 .testimonial {
   text-shadow: 1px 1px 3px black;
-  font-family: cursive;
+  font-family: 'Merienda One', cursive;
   font-size: 1.3em;
   /*margin-top: 50px;*/
   text-align: center;
@@ -224,14 +226,35 @@ footer svg {
 }
 .testimonial:after {
   content: close-quote;
-
 }
 .author {
   text-align: right;
-  font-family: sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 1.1em;
   color:#E2C847;
   text-shadow: 2px 2px 2px black;
+}
+
+.testimonial, .author {
+  opacity:0;
+  animation: fader 10s infinite;
+
+}
+
+@keyframes fader{
+  0% {
+    opacity:0;
+  }
+  30% {
+    opacity:1;
+  }
+  60% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+
 }
 
 

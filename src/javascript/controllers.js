@@ -38,5 +38,5 @@ app.controller("mainCtrl", function($state, $scope){
     quoteNumber === 4 ? quoteNumber = 0 : quoteNumber ++;
     
   }
-  setInterval(testimonialBox,5000);
+  setInterval(testimonialBox,10000);
 })
