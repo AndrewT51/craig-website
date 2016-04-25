@@ -1,4 +1,4 @@
-app.controller("mainCtrl", function($state, $scope){
+app.controller("navCtrl", function($state, $scope){
   var menuVisible = false;
   var menu = document.getElementsByClassName('navigation-bar')[0];
   var logo = document.getElementsByClassName('logo')[0];
@@ -9,32 +9,38 @@ app.controller("mainCtrl", function($state, $scope){
     menuVisible = false;
   }
 
-  function handleMenu(){
+  function handleMenu(e){
+    e.preventDefault();
     menuVisible = !menuVisible;
+    console.log(menuVisible)
     menu.className = menuVisible ? "navigation-bar menu-visible" : 'navigation-bar';
   }
 
   $scope.changeScreen = function(page){
-    handleMenu();
-    console.log(page)
+    console.log(menuVisible)
+    menuVisible = !menuVisible;
+    menu.className = 'navigation-bar';
     $state.go(page);
   }
-
-  $scope.services = data;
-  
 })
 
-.controller("testimonials", function($scope){
+app.controller('mainCtrl',function($scope){
+  $scope.services = data;
+})
+
+app.controller("testimonials", function($scope){
   var quoteNumber = 0;
   var testimonial = document.querySelector('.testimonial');
   var author = document.querySelector('.author');
   testimonialBox();
+
   
   function testimonialBox(){
     fadeIn();
+    $scope.test = testimonials[quoteNumber].quote;
     setTimeout(fadeOut,7500);
-    testimonial.textContent = testimonials[quoteNumber].quote;
-    author.textContent = testimonials[quoteNumber].customer;
+    // testimonial.textContent = testimonials[quoteNumber].quote;
+    // author.textContent = testimonials[quoteNumber].customer;
     quoteNumber === 4 ? quoteNumber = 0 : quoteNumber ++;
   }
   function fadeIn(){

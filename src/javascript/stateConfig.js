@@ -4,8 +4,8 @@ app.config(["$urlRouterProvider", "$stateProvider",($urlRouterProvider, $statePr
   $stateProvider
   .state('home', {  
     url: "/",
-    templateUrl: "./src/templates/home.html",
-    controller: 'mainCtrl'
+    templateUrl: "./src/templates/home.html"
+    // controller: 'mainCtrl'
   })
 
   .state('other',{
